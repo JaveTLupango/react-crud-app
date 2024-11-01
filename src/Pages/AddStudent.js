@@ -6,6 +6,14 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Form from 'react-bootstrap/Form';
 
 
+
+
+const onFormSubmit = e => {    
+  console.log(e.target.lastname.value);
+  debugger;
+  alert(e);
+}
+
 export default function AddStudent() {
     return(
       <Container>
@@ -48,10 +56,3 @@ export default function AddStudent() {
       </Container>
     );   
   }
-
-  const onFormSubmit = e => {    
-    console.log(e.target.lastname.value);
-    debugger;
-    alert(e);
-  }
-  
