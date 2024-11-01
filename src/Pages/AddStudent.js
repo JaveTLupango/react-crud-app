@@ -4,14 +4,14 @@ import Col from 'react-bootstrap/Col';
 import Row from 'react-bootstrap/Row';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Form from 'react-bootstrap/Form';
+import StudentModel from '../Model/student.model'
 
 
-
-
-const onFormSubmit = e => {    
-  console.log(e.target.lastname.value);
-  debugger;
-  alert(e);
+function onFormSubmit(event){   
+  alert('add');
+//  async () => {
+//     StudentModel.S_FirstName = event.target.firstname.value;
+//   }
 }
 
 export default function AddStudent() {
